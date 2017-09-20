@@ -1,0 +1,25 @@
+<html>
+	<title>Account Types</title>
+	<head>
+		<h1>Different Types of Accounts in Computers</h1>
+		<link rel="stylesheet" href="/css/mainstyles.css">
+	</head>
+	<body>
+		<?php include $_SERVER['DOCUMENT_ROOT']."/global/navbar.php"; ?>
+		<p>
+			When you use a computer, you usually have to log in before you can access anything. This might be automatic, but in any case you have a 'user' that is essentially your identity on the computer. Setting a password to protects this identity and prevents other from impersonating you on your machine. But why is it important that no one can log into your account? It's because different users have different permissions and authority over certain parts of the computer.
+		</p>
+		<p>
+			<h2>Administrator account</h2>
+			There is always at least one administator account. The first user you create when you buy a new computer or install an operating system must be an administrator. 'Administrator' is also referred to as 'admin' for short. Only the admin can create, modify, and delete other users on the system. This is why the first user is always an admin user. An admin also has the right to access other users' files and install new software, among other things. If an unauthorized person were to gain access to the admin account on your computer, they could steal or delete your data or uninstall applications. Generally, whoever owns the computer is the administrator. For shared computers, the admin account belongs to whomever is most suited for it: the most experienced computer user or whoever manages the computer uses the admin account.
+		</p>
+		<p>
+			<h2>Normal users</h2>
+			A normal user can only access his/her own data and usually has restricted access to features that affect the entire computer. For example, changing the firewall settings or changing the list of trusted Wi-Fi networks would affect every user on the system, so only an administrator can access these settings. Changing the desktop background has no effect on other users, so any user can set their own desktop background.
+		</p>
+		<p>
+			<h2>Guest users</h2>
+			The functionality and availability of guest users depends on your operating system, but they usually have very restricted access to the system. On Mac, guest users cannot store data persistently; after the guest logs out of the machine, any data associated with the guest user is deleted.
+		</p>
+	</body>
+</html>

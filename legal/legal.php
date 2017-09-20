@@ -1,0 +1,31 @@
+<html>
+	<title>Legal</title>
+	<head>
+		<h1>Legal Notices for MIT</h1>
+		<link rel="stylesheet" href="/css/mainstyles.css">
+	</head>
+	<body>
+		<?php include $_SERVER['DOCUMENT_ROOT']."/global/navbar.php"; ?>
+		<b><i>PENDING</i></b>: All content on this website (unless otherwise specified) is available under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC-BY-NC-SA 4.0) license</a>. You are free to:<br>
+		<ul>
+			<li>Share this content in any medium or format
+			<li>Adapt, change, or improve upon the material
+		</ul>
+		You agree to do so under the following conditions:<br>
+		<ul>
+			<li>You must give appropriate credit, provide a link to the license, and indicate if any changes were made to the material
+			<li>You may not use the material for commercial purposes
+			<li>If you modify the material, you must share it under the same or a compatible license
+			<li>You may not apply technological measures that prevent others from exercising rights granted by this license
+		</ul>
+		This summary is not a substitute for the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">full legal text</a> and has no legal value.
+		<hr>
+		This website uses jQuery for AJAX calls. jQuery is available under the <a href="https://tldrlegal.com/license/mit-license">MIT license</a>.<br>
+		License text from above link:<br>
+		The MIT License (MIT)<br><br>
+		Copyright (c) 2017 MIT<br><br>
+		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br><br>
+		The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br><br>
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+	</body>
+</html>
