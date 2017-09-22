@@ -3,9 +3,15 @@
 	<head>
 		<h1>Learn from MIT online!</h1>
 		<link rel="stylesheet" href="/css/mainstyles.css">
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $('#navbar').load('/navbar.html');
+			});
+		</script> 
 	</head>
 	<body>
-		<?php include $_SERVER['DOCUMENT_ROOT']."/global/navbar.php"; ?>
+		<div id="navbar"></div>
 		<p>
 			New topics will be added over time. If you wish to learn something that isn't here, <a href="/contact.php">contact us</a> to ask for help or <a href="/subscribe.php">subscribe to MIT</a> to be notified when we add new topics.
 		</p>

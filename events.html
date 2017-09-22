@@ -3,20 +3,28 @@
 	<head>
 		<h1>Events</h1>
 		<link rel="stylesheet" href="/css/mainstyles.css">
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $('#navbar').load('/navbar.html');
+				$('#upcoming').load('/events/meta/getupcoming.html', function(response, status, xhr) {
+					if (status == "error") {
+						$('#upcoming').load('/events/meta/noupcoming.html');
+					}
+				});
+				$('#past').load('/events/meta/past.html');
+			});
+		</script> 
 	</head>
 	<body>
-		<?php include $_SERVER['DOCUMENT_ROOT']."/global/navbar.php"; ?>
+		<div id="navbar"></div>
 		<p>
 			<h2>Upcoming events</h2>
-			<?php include $_SERVER['DOCUMENT_ROOT']."/events/meta/getupcoming.php"; ?>
+			<div id="upcoming"></div>
 		</p>
 		<p>
 			<h2>Past events</h2>
-			<?php include $_SERVER['DOCUMENT_ROOT']."/events/meta/past.php"; ?>
-		</p>
-		<p>
-			<h2>Subscribe</h2>
-			Click <a href="/subscribe.php">here</a> to subscribe to MIT.
+			<div id="past"></div>
 		</p>
 	</body>
 </html>

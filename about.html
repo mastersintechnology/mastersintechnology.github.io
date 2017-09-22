@@ -4,15 +4,23 @@
 	<head>
 		<link rel="stylesheet" href="/css/mainstyles.css">
 		<h1>About Us</h1>
+        <script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $('#navbar').load('/navbar.html');
+                //this has to be changed every year
+                $('#team').load('/history/team2016-7.html');
+			});
+		</script>
 	</head>
 	<body>
-		<?php include $_SERVER['DOCUMENT_ROOT']."/global/navbar.php"; ?>
+		<div id="navbar"></div>
 		<p>
 			<h3>Who We Are</h3>
 			Masters In Technology is a student-led Extra Curricular Activity (ECA) started by Antonio Song in 2012. We are a group of students from Year 10 and up who are proficient in the use of computers and software.
 		</p>
 		<p>
-			<?php include $_SERVER['DOCUMENT_ROOT']."/history/team2016-7.php"; ?>
+            <div id="team"></div>
 			<a href="/history.php">List of previous MIT team members</a>
 		</p>
 		<p>
