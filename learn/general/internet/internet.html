@@ -2,10 +2,17 @@
 	<title>Searching and Browers</title>
 	<head>
 		<h1>The Difference Between Search Engines and Browsers</h1>
+		<a href="/learn.html">Back to all topics</a>
 		<link rel="stylesheet" href="/css/mainstyles.css">
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $('#navbar').load('/navbar.html');
+			});
+		</script>
 	</head>
 	<body>
-		<?php include $_SERVER['DOCUMENT_ROOT']."/global/navbar.php"; ?>
+		<div id="navbar"></div>
 		<p>
 			It is important to understand the difference between web browsers and search engines. When you want to find information on the internet, you have to use both of these tools.
 		</p>

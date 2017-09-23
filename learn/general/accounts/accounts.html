@@ -2,10 +2,17 @@
 	<title>Account Types</title>
 	<head>
 		<h1>Different Types of Accounts in Computers</h1>
+		<a href="/learn.html">Back to all topics</a>
 		<link rel="stylesheet" href="/css/mainstyles.css">
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $('#navbar').load('/navbar.html');
+			});
+		</script>
 	</head>
 	<body>
-		<?php include $_SERVER['DOCUMENT_ROOT']."/global/navbar.php"; ?>
+		<div id="navbar"></div>
 		<p>
 			When you use a computer, you usually have to log in before you can access anything. This might be automatic, but in any case you have a 'user' that is essentially your identity on the computer. Setting a password to protects this identity and prevents other from impersonating you on your machine. But why is it important that no one can log into your account? It's because different users have different permissions and authority over certain parts of the computer.
 		</p>

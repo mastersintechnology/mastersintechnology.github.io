@@ -2,12 +2,19 @@
 	<title>Parental Controls</title>
 	<head>
 		<h1>Configuring Parental Controls on Mac</h1>
+		<a href="/learn.html">Back to all topics</a>
 		<link rel="stylesheet" href="/css/mainstyles.css">
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $('#navbar').load('/navbar.html');
+			});
+		</script>
 	</head>
 	<body>
-		<?php include $_SERVER['DOCUMENT_ROOT']."/global/navbar.php"; ?>
+		<div id="navbar"></div>
 		<p>
-			Parental controls allows you to limit the kinds of actions and content that can be accessed by certain users on a computer. This can be useful for preventing young users from accessing explicit content or limiting computer usage time. Note that parental controls cannot be enabled for <a href="/learn/general/accounts/accounts.php">administrator accounts</a>. You must have a separate administrator account and make the accounts for which parental controls will be enabled a normal user. Please be aware of the consequences of enabling parental controls for a user:
+			Parental controls allows you to limit the kinds of actions and content that can be accessed by certain users on a computer. This can be useful for preventing young users from accessing explicit content or limiting computer usage time. Note that parental controls cannot be enabled for <a href="/learn/general/accounts/accounts.html">administrator accounts</a>. You must have a separate administrator account and make the accounts for which parental controls will be enabled a normal user. Please be aware of the consequences of enabling parental controls for a user:
 			<h4>If that user does not know the administrator password</h4>
 			Installing software requires permission from an administrator. Being unable to install new software can potentially disrupt school work. For example, if parental controls is enabled on a student's laptop and s/he doesn't know the admin password but has to install some third-party software for an assignment, s/he will be unable to complete that assignment before returning home and asking someone to enter the admin password.
 			<h4>If that user knows the administrator password</h4>

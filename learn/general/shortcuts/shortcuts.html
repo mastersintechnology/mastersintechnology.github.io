@@ -2,11 +2,17 @@
 	<title>Keyboard Shortcuts</title>
 	<head>
 		<h1>Using Keyboard Shortcuts</h1>
-		<a href="/learn.php">Back to all topics</a>
+		<a href="/learn.html">Back to all topics</a>
 		<link rel="stylesheet" href="/css/mainstyles.css">
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $('#navbar').load('/navbar.html');
+			});
+		</script>
 	</head>
 	<body>
-		<?php include $_SERVER['DOCUMENT_ROOT']."/global/navbar.php"; ?>
+		<div id="navbar"></div>
 		<p>
 			<h2>What is a keyboard shortcut?</h2>
 			Keyboard shortcuts are shortcuts to actions in applications. Some applications may be configured to respond to keystrokes in a particular way, but <i>in general</i>, a keyboard shortcut consists of one or more <b>modifier keys</b> and <u>one</u> normal key.<br>

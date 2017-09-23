@@ -2,11 +2,17 @@
 	<title>Identifying Your OS</title>
 	<head>
 		<h1>Identifying Your Operating System</h1>
-		<a href="/learn.php">Back to all topics</a>
+		<a href="/learn.html">Back to all topics</a>
 		<link rel="stylesheet" href="/css/mainstyles.css">
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $('#navbar').load('/navbar.html');
+			});
+		</script>
 	</head>
 	<body>
-		<?php include $_SERVER['DOCUMENT_ROOT']."/global/navbar.php"; ?>
+		<div id="navbar"></div>
 		<p>
 			A lot of what we do today is done online through web apps and services. However, different versions of the same operating system (OS) can have different features; standalone apps (the ones you download and use offline) can have different system requirements. Certain versions of applications may not support your operating system. Therefore, you should know how to identify the OS you are running.
 		</p>
