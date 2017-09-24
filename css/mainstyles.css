@@ -284,7 +284,7 @@ div.footer {
 .subTitleHead
 {
     font-family: 'Helvetica Neue';
-    font-weight:100;
+    font-weight:normal;
 }
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .LargeBorder
@@ -295,43 +295,43 @@ div.footer {
     border-radius: 5px;
     background-color: #FCFFF7;
 }
-.a
+a
 {
     font-family: 'Helvetica Neue';
     font-weight:200;
     color:#FCFFF7;
 }
-.li
+li
 {
     font-family: 'Helvetica Neue';
     font-weight:100; 
     color:#FCFFF7;
 }
-.h1
+h1
 {
     font-family: 'Helvetica Neue';
     font-weight:100; 
     color:#FCFFF7;
 }
-.h2
+h2
 {
     font-family: 'Helvetica Neue';
     font-weight:100; 
     color:#FCFFF7;
 }
-.h3
+h3
 {
     font-family: 'Helvetica Neue';
     font-weight:100; 
     color:#FCFFF7;
 }
-.h4
+h4
 {
     font-family: 'Helvetica Neue';
     font-weight:100;
     color:#FCFFF7;
 }
-.p
+p
 {
     font-family: 'Helvetica Neue';
     font-weight:200;
