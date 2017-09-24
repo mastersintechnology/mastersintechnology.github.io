@@ -53,8 +53,8 @@ div.footer {
 	right: 0;
 	left: 0;
 	padding: 1rem;
-	
-	background-color:#FCFFF7;
+	z-index:-10;
+	background-color:#131B23;
 	text-align: center;
 }
 /*BUTTON CSS*/
@@ -299,6 +299,7 @@ div.footer {
 {
     font-family: 'Helvetica Neue';
     font-weight:200;
+    color:#FCFFF7;
 }
 .li
 {
