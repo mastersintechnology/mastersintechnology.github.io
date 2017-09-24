@@ -131,7 +131,7 @@ div.footer {
     display: none;
     position: absolute; 
     top: 28.7%; 
-    left: -100%;
+    left: -80%;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -159,7 +159,7 @@ div.footer {
     display: none;
     position: absolute; 
     top: 57%; 
-    left: -100%;
+    left: -80%;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -187,7 +187,7 @@ div.footer {
     display: none;
     position: absolute; 
     top: 71.15%; 
-    left: -100%;
+    left: -80%;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -214,8 +214,8 @@ div.footer {
 .GeneralDrop-Content {
     display: none;
     position: absolute; 
-    top: 0.4%; 
-    left: -100%;
+    top: 0%; 
+    left: -101%;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
