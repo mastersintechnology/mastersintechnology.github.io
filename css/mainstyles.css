@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Helvetica Neue";
-  src: 'HelveticaNeue.dfont';
+  src: "/HelveticaNeue.dfont";
   }
 body {
 	font-family: "Helvetica Neue" sans-serif;
