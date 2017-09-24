@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Helvetica Neue";
+  src: 'HelveticaNeue.dfont';
+  }
 body {
 	font-family: "Helvetica Neue" sans-serif;
 	color: black;
@@ -74,7 +78,7 @@ div.footer {
     font-weight:100;
 }
 .button:hover {
-    background-color: #FCF7FF; 
+    background-color: #FCFFF7; 
     border: none;
     color: black;
     padding: 15px 32px;
@@ -127,7 +131,7 @@ div.footer {
     display: none;
     position: absolute; 
     top: 28.7%; 
-    left: 100%;
+    left: -100%;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -155,7 +159,7 @@ div.footer {
     display: none;
     position: absolute; 
     top: 57%; 
-    left: 100%;
+    left: -100%;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -183,7 +187,7 @@ div.footer {
     display: none;
     position: absolute; 
     top: 71.15%; 
-    left: 100%;
+    left: -100%;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -294,5 +298,35 @@ div.footer {
 .a
 {
     font-family: 'Helvetica Neue';
+    font-weight:200;
+}
+.li
+{
+    font-family: 'Helvetica Neue';
+    font-weight:100; 
+    color:#FCFFF7;
+}
+.h1
+{
+    font-family: 'Helvetica Neue';
+    font-weight:100; 
+    color:#FCFFF7;
+}
+.h3
+{
+    font-family: 'Helvetica Neue';
+    font-weight:100; 
+    color:#FCFFF7;
+}
+.h4
+{
+    font-family: 'Helvetica Neue';
     font-weight:100;
+    color:#FCFFF7;
+}
+.p
+{
+    font-family: 'Helvetica Neue';
+    font-weight:200;
+    color:#FCFFF7;
 }
