@@ -9,8 +9,21 @@
 				var form = document.getElementById("request");
 				var year = form['year'].value;
 				var week = form['week'].value;
-				$('#loadedtip').load('/techtips/' + year + "/" + week + "/techtip.html");
 				form.reset();
+				//week calculation by user nvd on StackOverflow
+				//https://stackoverflow.com/a/27125580/2773311
+				let now = new Date();
+				if (year > now.getFullYear()) {
+					form['year'].value = "This year hasn't arrived yet";
+					return;
+				}
+				let onejan = new Date(now.getFullYear(), 0, 1);
+				let curweek = Math.ceil( (((now - onejan) / 86400000) + onejan.getDay() + 1) / 7 );
+				if (week > curweek) {
+					form['week'].value = "This week hasn't arrived yet";
+					return;
+				}
+				$('#loadedtip').load('/techtips/' + year + "/" + week + "/techtip.html");
 			}
 
 			$(document).ready(function(){
