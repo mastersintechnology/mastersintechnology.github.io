@@ -2,19 +2,34 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: black;
-	padding-left: 11em;
+	padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 20em;
 	margin-bottom:100px;
 	display:block;
+    background-color:beige;
 }
+
 ul.navbar {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	position: absolute;
-	top: 2em;
-	left: 1em;
-	width: 9em
+	top: 6em;
+	right: 2.5em;
+	width: 35em
 }
+/*NAVBAR IMG CSS*/
+ul.navbar2 {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 1em;
+	left: 3em;
+	width: 80em
+}
+
 div.table {
 	width: 600px;
 	margin: 0 auto;
@@ -27,6 +42,7 @@ div.rightCol {
 	float: right;
 	width: 50%;
 }
+/*FOOTER CSS*/
 div.footer {
 	position:fixed;
 	bottom:0;
@@ -34,6 +50,119 @@ div.footer {
 	left: 0;
 	padding: 1rem;
 	
-	background-color: #efefef;
+	background-color:azure;
 	text-align: center;
+}
+/*BUTTON CSS*/
+
+.imgbtn
+{
+    cursor: pointer;
+}
+.button {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #e7e7e7; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*DROPDOWN CSS
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.MacDrop-Content {
+    display: none;
+    position: absolute; 
+    top: 30%; 
+    left: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.MacDrop-Content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.MacDrop-Content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.MacDrop:hover .MacDrop-Content {
+    display: block;
+    
+}
+
+.indent
+{
+    text-indent: 40px;
+}
+
+.TitleHead
+{
+    border-left: 6px solid blue;
+    background-color: lightcyan;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.LargeBorder
+{
+    
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
 }

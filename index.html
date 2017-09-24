@@ -1,9 +1,9 @@
 <html>
 		<title>Masters In Technology</title>
 		<head>
-				<h1>Masters In Technology</h1>
-				<link rel="stylesheet" href="/css/mainstyles.css">
-				<script type="text/javascript" src="/js/jquery.js"></script>
+                
+				<link rel="stylesheet" href="css/mainstyles.css">
+				<script type="text/javascript" src="js/jquery.js"></script>
 				<script type="text/javascript">
 						$(document).ready(function(){
 								$('#navbar').load('/navbar.html');
@@ -30,14 +30,32 @@
 		</head>
 		<body>
 				<div id="navbar"></div>
-				<p>
-						<b>Upcoming events</b>
-						<div id="upcoming"></div>
-				</p>
-				<hr>
-				<p>
-						<div id="tipheader"></div>
-						<div id="techtip"></div>
-				</p>
+            
+            <div class="LargeBorder">
+                <h1>
+                    <div id="tipheader" class="TitleHead"></div>
+                </h1>
+                <h4>
+                    <div class="indent">
+                        <div id="techtip"></div>
+                    </div>
+                </h4>
+            </div>	
+               
+    
+                <br><br>
+            <div class="LargeBorder">
+                <h1 class="TitleHead">EVENTS</h1>
+                <div class="indent">
+                    <h2>
+                        <b>Upcoming events</b>	
+                    </h2>
+                    
+                        <div id="upcoming"></div>
+                    <hr>
+                </div>
+            </div>   
+			
+				
 		</body>
 </html>
