@@ -9,7 +9,7 @@
 				var form = document.getElementById("request");
 				var year = form['year'].value;
 				var week = form['week'].value;
-				window.location = '#' + year + '-' + week;
+				$('#loadedtip').load('/techtips/' + year + "/" + week + "/techtip.html");
 				form.reset();
 			}
 
@@ -20,26 +20,16 @@
 	</head>
 	<body>
 		<div id="navbar"></div>
-		Go to a specific tip:<br>
+		Enter the year and week to load a specific:<br>
 		<form id="request">
 			Year: <input type="text" name="year"><br>
 			Week: <input type="text" name="week"><br>
 			<button onClick="requestTip()" type="button">Go to Tip</button>
 		</form><br><br>
-		<div id="alltips"></div>
-		<?php
-			include $_SERVER['DOCUMENT_ROOT']."/global/navbar.php";
-			$yrNow = date("Y");
-			$wkNow = date("W");
-			for ($yr = $yrNow; $yr >= 2017; $yr--){
-				for ($wk = ($yr == $yrNow ? $wkNow : 53); $wk >= 1; $wk--){
-					$path = $_SERVER['DOCUMENT_ROOT']."/techtips/$yr/$wk/techtip.php";
-					if (file_exists($path)){
-						echo "<a name=\"$yr-$wk\"><b>Tech Tip of Week $wk, $yr</b></a>";
-						include $path;
-					}	
-				}
-			}
-		?>
+		<p>
+			<h2>Table of Contents (updated monthly)</h2>
+			(Currently empty)
+		</p>
+		<div id="loadedtip"></div>
 	</body>
 </html>
