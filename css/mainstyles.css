@@ -3,6 +3,9 @@
   font-family: "Helvetica Neue";
   src: url(/helveticaneue/HelveticaNeueLt.ttf);
   }
+* {
+    font-family: "Helvetica Neue";
+  }
 body {
 	font-family: "Helvetica Neue" sans-serif;
 	color: black;
