@@ -147,6 +147,120 @@ div.footer {
     
 }
 
+.imovie-Content {
+    display: none;
+    position: absolute; 
+    top: 57%; 
+    left: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.imovie-Content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.imovie-Content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.imoviedrop:hover .imovie-Content {
+    display: block;  
+}
+
+/*14.15*/
+.photoshopDrop-Content {
+    display: none;
+    position: absolute; 
+    top: 71.15%; 
+    left: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.photoshopDrop-Content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.photoshopDrop-Content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.photoshopDrop:hover .photoshopDrop-Content {
+    display: block;  
+}
+
+/*14.15*/
+.GeneralDrop-Content {
+    display: none;
+    position: absolute; 
+    top: 0.4%; 
+    left: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.GeneralDrop-Content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.GeneralDrop-Content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.GeneralDrop:hover .GeneralDrop-Content {
+    display: block;  
+}
+
+/*14.15*/
+.OnlineDrop-Content {
+    display: none;
+    position: absolute; 
+    top: 0.4%; 
+    left: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.OnlineDrop-Content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.OnlineDrop-Content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.OnlineDrop:hover .OnlineDrop-Content {
+    display: block;  
+}
+
+
+
+
 .indent
 {
     margin-left: 40px;
