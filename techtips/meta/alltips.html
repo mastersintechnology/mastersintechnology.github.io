@@ -2,7 +2,7 @@
 	<title>MIT Tech Tips</title>
 	<head>
 		<link rel="stylesheet" href="/css/mainstyles.css">
-		<h1>All Tech Tips Released by MIT</h1>
+		
 		<script type="text/javascript" src="/js/jquery.js"></script>
 		<script type="text/javascript">
 			function requestTip(){
@@ -33,16 +33,22 @@
 	</head>
 	<body>
 		<div id="navbar"></div>
+        <div class="LargeBorder">
+        <h1>All Tech Tips Released by MIT</h1>
 		Enter the year and week to load a specific:<br>
 		<form id="request">
-			Year: <input type="text" name="year"><br>
-			Week: <input type="text" name="week"><br>
+            <p>Year:</p>
+			<input type="text" name="year">
+            <p>Week:</p>
+			<input type="text" name="week"><br><br>
 			<button onClick="requestTip()" type="button">Go to Tip</button>
 		</form><br><br>
 		<p>
 			<h2>Table of Contents (updated monthly)</h2>
 			(Currently empty)
 		</p>
+        
 		<div id="loadedtip"></div>
+    </div>
 	</body>
 </html>
