@@ -1,32 +1,31 @@
 <html>
-		<title>Masters In Technology</title>
-		<head>
-                
-				<link rel="stylesheet" href="css/mainstyles.css">
-				<script type="text/javascript" src="js/jquery.js"></script>
-				<script type="text/javascript">
-						$(document).ready(function(){
-								$('#navbar').load('/navbar.html');
-		
-								$('#upcoming').load('/events/meta/getupcoming.html', function(response, status, xhr) {
-										if (status == "error") {
-												$('#upcoming').load('/events/meta/noupcoming.html');
-										}
-								});
-		
-								//week calculation by user nvd on StackOverflow
-								//https://stackoverflow.com/a/27125580/2773311
-								let now = new Date();
-								let onejan = new Date(now.getFullYear(), 0, 1);
-								week = Math.ceil( (((now - onejan) / 86400000) + onejan.getDay() + 1) / 7 );
-								$('#tipheader').html("<b>Tech Tip of Week " + week + ", " + now.getFullYear() + "</b>");
-								$('#techtip').load('/techtips/" + now.getFullYear() + "/" + week + "/techtip.html', function(response, status, xhr){
-									if (status == "error") {
-										$('#techtip').load('/techtips/meta/notechtip.html');
-									}
-								});
-						});
-				</script> 
+	<title>Masters In Technology</title>
+	<head>
+		<link rel="stylesheet" href="css/mainstyles.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#navbar').load('/navbar.html');
+
+				$('#upcoming').load('/events/meta/getupcoming.html', function(response, status, xhr) {
+					if (status == "error") {
+						$('#upcoming').load('/events/meta/noupcoming.html');
+					}
+				});
+
+				//week calculation by user nvd on StackOverflow
+				//https://stackoverflow.com/a/27125580/2773311
+				let now = new Date();
+				let onejan = new Date(now.getFullYear(), 0, 1);
+				let week = Math.ceil( (((now - onejan) / 86400000) + onejan.getDay() + 1) / 7 );
+				$('#tipheader').html("<b>Tech Tip of Week " + week + ", " + now.getFullYear() + "</b>");
+				$('#techtip').load("/techtips/" + now.getFullYear() + "/" + week + "/techtip.html", function(response, status, xhr){
+					if (status == "error") {
+						$('#techtip').load('/techtips/meta/notechtip.html');
+					}
+				});
+			});
+		</script>
 		</head>
 		<body>
 				<div id="navbar"></div>
