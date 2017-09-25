@@ -67,8 +67,9 @@ div.GoToTop
 	right: 0;
 	left: 0;
 	padding: 5;
-	background-color:#EDC100;
+	background-color:#131B23;
 	text-align: center;
+    z-index: -1;
 }
 
 .link {
