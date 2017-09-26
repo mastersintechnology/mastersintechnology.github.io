@@ -9,6 +9,14 @@
 			    $('#navbar').load('/navbar.html');
 			});
 		</script>
+		
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script type="text/javascript">
+		   (function(){
+			  emailjs.init("user_dNUTnHrGIx2yGv4lkBnqw");
+		   })();
+		</script>
+		
 	</head>
 	<body>
 		<div id="navbar"></div>
@@ -20,6 +28,38 @@
 			We will do our best to reply within two school days. Note that we may not check our email as regularly during school holidays.<br><br>
 			We apologize in advance for any delays in communications during school days, as we may be busy with exams or other schoolwork.
 		</p>
+	<div class="ContactUs">
+		<br>
+		
+		<strong><p>Name:</p></strong>
+        <input class="input" id="name" placeholder="Name:">
+        <strong><p>Email</p></strong>
+        <input class="input" id="email" placeholder="Email:">
+        <strong><p>Comment</p></strong>
+        <input class="input" id="comment" placeholder="What You Need Help With:"><br>
+		<button onclick="send();" class="submit">Submit</button>
+		
+	</div>
+       
         </div>
+        
+		<script>
+			document.getElementById("name").value = localStorage.getItem("Name")
+			document.getElementById("email").value = localStorage.getItem("Email")
+			
+		function send()
+			{
+				localStorage.setItem("Name",document.getElementById("name").value) 
+				localStorage.setItem("Email",document.getElementById("email").value) 
+				emailjs.send("default_service","contact_us",{name:document.getElementById("name").value, email:document.getElementById("email").value, comment:document.getElementById("comment").value});
+
+				document.getElementById("name").value=""
+				document.getElementById("email").value=""
+				document.getElementById("comment").value=""
+				alert("Form Submitted!")
+			}
+		
+		</script>
+		
 	</body>
 </html>

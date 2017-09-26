@@ -1,4 +1,25 @@
+
+
+<button onClick="document.getElementById('id01').style.display='block'">Calendar</button>
 <ul>
 	<li><a href="/events/2017/pw/parentworkshop.html">Parent Workshops 2017</a>
 	<li><a href="/events/2016/pw/parentworkshop.html">Parent Workshops 2016</a>
 </ul>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" id="closed">&times;</span>
+      
+    </div>
+
+    <div class="container">
+		<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+    </div>
+
+  </form>
+</div>
