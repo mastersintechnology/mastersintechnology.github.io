@@ -372,6 +372,7 @@ div.GoToTop
     
     border: 2px solid black;
     padding: 10px;
+    padding-left: 10px;
     border-radius: 5px;
     background-color: #FCFFF7;
 }
