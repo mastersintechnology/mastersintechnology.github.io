@@ -22,7 +22,7 @@ ul.navbar {
 	padding: 0;
 	margin: 0;
 	position: absolute;
-	top: 20em;
+	top: 16em;
 	right: 3.5em;
 	width: 50em
 }
@@ -372,7 +372,7 @@ div.GoToTop
     
     border: 2px solid black;
     padding: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
     border-radius: 5px;
     background-color: #FCFFF7;
 }
